@@ -8,14 +8,15 @@ import java.util.List;
 import lombok.Data;
 
 /**
- * @author Zubayer Ahamed
+ * @author cyclingbd007
  *
  */
 @Data
-public class Category {
+public class SubCategory {
 
+	private Integer subCategoryId;
 	private Integer categoryId;
-	private String categoryName;
+	private String subCategoryName;
 	private boolean status;
-	private List<SubCategory> subCategories;
+	private List<Product> products;
 }
